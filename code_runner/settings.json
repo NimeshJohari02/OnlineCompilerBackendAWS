@@ -1,0 +1,24 @@
+{
+    "rule":{
+        "about_interpreted_lang":"interpreted languages are stored at the top and interpreted_till must be increased",
+        "about run and del":"it is for the compile type lang and it should have syntax like run_<lang_name>"
+    },
+
+    "configure_dir":"cd {}",
+    "interpreted_till":5,
+    "py":"python {} {}",
+    "js":"node {} {}",
+    "rb":"ruby {} {}",
+
+    "c":"gcc {} -o {}.out",
+    "run_c":"./{}.out {}",
+    "del_c":"rm *.out",
+
+    "cpp":"g++ {} -o {}.out",
+    "run_cpp":"./{}.out {}",
+    "del_cpp":"rm *.out",
+
+    "java":"javac {}",
+    "run_java":"java {} {}",
+    "del_java":"rm *.class"
+}
